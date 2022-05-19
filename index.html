@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<html lang="en-US">
+		<head>
+			<meta charset="UTF-8">
+			<title></title>
+			<link rel="stylesheet" href="./styles.css">
+		</head>
+		<body>
+			<table>
+				<thead>
+					<th>Tag</th>
+					<th>Syntax</th>
+					<th>Description</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>base</td>
+						<td>
+							1: &lt;base target="[_self|_blank|_parent|_top]"&gt;<br>
+							2: &lt;base target="[option]" href="{url}"&gt;<br>
+							3: &lt;base href="{url}"&gt;
+						</td>
+						<td>The <span class="code">base</span> tag is used to create a base url for the document, unless an absolute url is specified. Any url specified that begins with only a <span class="code">/</span> will be appended to the base url. The <span class="code">target</span> attribute also specifies a default target. The url can be overriden by using an absolute url.</td>
+					</tr>
+					<tr>
+						<td>form</td>
+						<td>
+							&lt;form action="{url}" [method="[post|put|...]|get"]&gt;<br>
+							&emsp;{input fields}<br>
+							&lt;/form&gt;
+						</td>
+						<td>Forms are used, as well, forms... They aren't completetly necessary for submitting user inputted data to a server, but they make a very useful container that also allow you to specify the submit url and method if the data isn't submitted through JavaScript.</td>
+					</tr>
+					<tr>
+						<td>input</td>
+						<td>&lt;input (type="[file|email|...]|text") name="{name}"&gt;</td>
+						<td>The <span class="code">input</span> element is used for collecting data, typically contained within a form. There are many different types, such as color, password, and checkboxes and radio buttons for selecting. A full list can be found <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input">on MDN</a>.</td>
+					</tr>
+					<tr>
+						<td>menu</td>
+						<td>
+							&lt;menu&gt;<br>
+							&emsp;{li items}<br>
+							&lt;/menu&gt;
+						</td>
+						<td>The <span class="code">menu</span> element is a semantic HTML tag for menus, but is still constructed using or <span class="code">&lt;li&gt;</span> tags.</td>
+					</tr>
+					<tr>
+						<td>pre</td>
+						<td>
+							&lt;pre&gt;<br>
+							&emsp;{content}<br>
+							&lt;/pre&gt;
+						</td>
+						<td>The <span class="code">pre</span> tag is typically used to share a code snippet. All content is escaped, and whitespace is preserved exactly.</td>
+					</tr>
+				</tbody>
+			</table>
+		</body>
+	</html>

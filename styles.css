@@ -1,0 +1,36 @@
+*{margin: 0 auto;}
+table{
+	margin-top: 45px;
+	width: auto;
+	border-spacing: 5px;
+	background-image: linear-gradient(320deg, red, orange 17%, yellow 34%, green 50%, lightblue 67%, blue 84%, orchid 90%, purple 100%);
+	background-origin: border-box;
+	border: 10px solid transparent;
+	border-radius: 15px;
+}
+th{
+	margin: 20px;
+	font-size: 30px;
+}
+td{
+	padding: 15px;
+	background-color: white;
+}
+/* Round edges of the table */
+tr:first-child td:first-child{border-top-left-radius: 15px}
+tr:first-child td:last-child{border-top-right-radius: 15px}
+tr:last-child td:first-child{border-bottom-left-radius: 15px}
+tr:last-child td:last-child{border-bottom-right-radius: 15px}
+td:nth-child(2){
+	width: 100%;
+	height: 100%;
+}
+@font-face {
+	font-family: "Roboto Mono";
+	src: url(https://fonts.gstatic.com/s/robotomono/v21/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_gPq_SeW4Ep0.woff2);
+}
+td:first-child::before{content: "<"}
+td:first-child::after{content: ">"}
+td:first-child, td:nth-child(2), .code{font-family: "Roboto Mono", monospace}
+.code{background-color: #f1f1f0;}
+td:nth-child(2), td:nth-child(3){width: 450px;}
